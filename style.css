@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    padding: 4em;
+}
+
+#add-book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px ridge rgb(150, 131, 131);
+    border-radius: 1em;
+    padding: 1em;
+    margin-bottom: 1em;
+    gap: 1em;
+}
+
+#add-book form {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+#add-book form input {
+    padding: 0.5em;
+    border: 1px solid #a59292;
+    border-radius: 0.5em;
+    font-size: 1em;
+    width: 100%;
+}
+
+#add-book form button {
+    padding: 0.5em;
+    border: 1px solid #a59292;
+    border-radius: 0.5em;
+    font-size: 1em;
+    width: 100%;
+    cursor: pointer;
+}
+
+#add-book form button:hover {
+    background-color: #a59292;
+    color: #f0f0f0;
+    border: 1px solid #f0f0f0;
+    transform: scale(1.05);
+}
+
+#book-container {
+    display: flex;
+    flex-direction: column;
+    border: 3px ridge rgb(150, 131, 131);
+    border-radius: 1em;
+}
+
+#book-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#book-container table th, #book-container table tr{
+    padding: 1em;
+    text-align: center;
+    border-bottom: 3px ridge #a59292;
+}
+
+#book-container table td {
+    padding: 1em;
+}
+
+#book-container table tr:last-child {
+    border-bottom: none;
+}
+
+#book-container table td button {
+    padding: 0.1em 0.5em;
+    background-color: #f0f0f0;
+    border: 1px solid #a59292;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+#book-container table td button:hover {
+    background-color: #a59292;
+    color: #f0f0f0;
+    border: 1px solid #f0f0f0;
+    transform: scale(1.05);
+}
